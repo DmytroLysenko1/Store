@@ -1,0 +1,29 @@
+spring:
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8083/realms/store
+  jpa:
+    show-sql: true
+
+  datasource:
+    url: jdbc:postgresql://localhost:5434/catalogue
+    password: catalogue
+    username: catalogue
+  flyway:
+    schemas:
+      - public
+      - catalogue
+
+  application:
+   name: catalogue-service
+
+server:
+  port: 8082
+
+logging:
+  level:
+    org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger: OFF
+    sql: info
