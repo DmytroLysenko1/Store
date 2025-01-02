@@ -21,6 +21,7 @@ The Store Management Application is a comprehensive solution designed to manage 
 - **Spring Data JPA**: Facilitates database interactions using JPA, allowing for easy and efficient data access and manipulation.
 - **Spring WebFlux**: Used for building reactive web applications, enabling non-blocking, asynchronous processing for better performance under load.
 - **PostgreSQL**: The relational database used for persistent storage, chosen for its reliability, scalability, and support for advanced SQL features.
+- **MongoDB**: NoSQL database used for flexible and scalable data storage, suitable for handling large volumes of unstructured data.
 - **Flyway**: Manages database migrations, ensuring that the database schema is versioned and consistent across different environments.
 - **Maven**: Build automation tool used for managing dependencies, building the project, and running tests, providing a standardized build process.
 - **JUnit**: Testing framework for unit and integration tests, ensuring that the application is thoroughly tested and reliable.
@@ -36,7 +37,10 @@ The Store Management Application is a comprehensive solution designed to manage 
 - **Logback**: Logging framework used for logging application events, chosen for its performance and flexibility.
 - **Docker**: Containerizes the application, ensuring consistent environments across development, testing, and production.
 - **Git**: Version control system used for tracking changes in the source code, facilitating collaboration and version management.
-- **IntelliJ IDEA**: Integrated Development Environment (IDE) used for development, providing powerful tools and features to enhance productivity.
+- **ModelMapper**: Object mapping library used to simplify the conversion of objects from one type to another, reducing boilerplate code and improving maintainability.
+- **Testcontainers**: Provides lightweight, disposable instances of common databases, Selenium web browsers, or anything else that can run in a Docker container, used for integration testing.
+- **Spring REST Docs**: Documents RESTful services by combining hand-written documentation with auto-generated snippets produced with Spring MVC Test or WebTestClient.
+- **Reactor Test**: Provides utilities for testing reactive applications built with Project Reactor, ensuring that reactive streams behave as expected.
 
 ## Project Structure
 
