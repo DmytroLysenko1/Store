@@ -15,28 +15,28 @@ The Store Management Application is a comprehensive solution designed to manage 
 
 ## Technologies Used
 
-- **Java**: The primary programming language used for the application.
-- **Spring Boot**: Framework for building the application, providing dependency injection, web framework, and more.
-- **Spring Security**: For securing the application with authentication and authorization.
-- **Spring Data JPA**: For database interactions using JPA.
-- **Spring WebFlux**: For building reactive web applications.
-- **PostgreSQL**: The relational database used for persistent storage.
-- **Flyway**: For database migrations.
-- **Maven**: Build automation tool used for managing dependencies and building the project.
-- **JUnit**: Testing framework for unit and integration tests.
-- **WireMock**: For mocking HTTP services in tests.
-- **MockMvc**: For testing Spring MVC controllers.
-- **OAuth2**: For handling OAuth2 authentication.
-- **JWT**: For handling JSON Web Tokens.
-- **Mockito**: For mocking dependencies in tests.
-- **Thymeleaf**: Template engine for rendering views.
-- **Lombok**: For reducing boilerplate code.
-- **H2 Database**: In-memory database used for testing.
-- **SLF4J**: Simple Logging Facade for Java.
-- **Logback**: Logging framework.
-- **Docker**: For containerizing the application.
-- **Git**: Version control system.
-- **IntelliJ IDEA**: Integrated Development Environment (IDE) used for development.
+- **Java**: The primary programming language used for the application, chosen for its robustness, portability, and extensive ecosystem.
+- **Spring Boot**: Used to build the application, providing dependency injection, a web framework, and various utilities to simplify development.
+- **Spring Security**: Secures the application with authentication and authorization, ensuring that only authorized users can access certain parts of the application.
+- **Spring Data JPA**: Facilitates database interactions using JPA, allowing for easy and efficient data access and manipulation.
+- **Spring WebFlux**: Used for building reactive web applications, enabling non-blocking, asynchronous processing for better performance under load.
+- **PostgreSQL**: The relational database used for persistent storage, chosen for its reliability, scalability, and support for advanced SQL features.
+- **Flyway**: Manages database migrations, ensuring that the database schema is versioned and consistent across different environments.
+- **Maven**: Build automation tool used for managing dependencies, building the project, and running tests, providing a standardized build process.
+- **JUnit**: Testing framework for unit and integration tests, ensuring that the application is thoroughly tested and reliable.
+- **WireMock**: Mocks HTTP services in tests, allowing for isolated and repeatable testing of components that interact with external services.
+- **MockMvc**: Tests Spring MVC controllers, providing a way to test web layer components without starting a full web server.
+- **OAuth2**: Handles OAuth2 authentication, enabling secure and standardized authentication mechanisms.
+- **JWT**: Manages JSON Web Tokens, providing a compact and secure way to transmit information between parties.
+- **Mockito**: Mocks dependencies in tests, allowing for isolated unit testing by simulating the behavior of complex dependencies.
+- **Thymeleaf**: Template engine for rendering views, enabling dynamic generation of HTML content based on server-side data.
+- **Lombok**: Reduces boilerplate code, simplifying the development process by automatically generating common methods like getters and setters.
+- **H2 Database**: In-memory database used for testing, providing a lightweight and fast database solution for running tests.
+- **SLF4J**: Simple Logging Facade for Java, providing a standardized logging API that can work with various logging frameworks.
+- **Logback**: Logging framework used for logging application events, chosen for its performance and flexibility.
+- **Docker**: Containerizes the application, ensuring consistent environments across development, testing, and production.
+- **Git**: Version control system used for tracking changes in the source code, facilitating collaboration and version management.
+- **IntelliJ IDEA**: Integrated Development Environment (IDE) used for development, providing powerful tools and features to enhance productivity.
 
 ## Project Structure
 
