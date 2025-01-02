@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[[${product.title}]] &ndash; Store</title>
+</head>
+<body>
+<a data-th-href="@{/catalogue/products/list}">&larr; Back to products list</a>
+<h1 data-th-text="${product.title}"></h1>
+<ul>
+    <li><strong>ID</strong>: <span data-th-text="${product.id}"></span></li>
+    <li><strong>Name</strong>: <span data-th-text="${product.title}"></span></li>
+    <li><strong>Descriptions</strong>: <span data-th-text="${product.details}"></span></li>
+</ul>
+<a data-th-href="@{/catalogue/products/{productId}/edit(productId=${product.id})}">Change</a>
+<form method="post" data-th-action="@{/catalogue/products/{productId}/delete(productId=${product.id})}">
+    <button type="submit">Delete</button>
+</form>
+</body>
+</html>

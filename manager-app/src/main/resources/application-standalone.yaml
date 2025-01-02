@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/manager
+    username: manager
+    password: manager
+  security:
+   oauth2:
+     client:
+      registration:
+       keycloak:
+        client-id: manager-app
+        client-secret: jcvp0NqjiXS85aZyeRcE3XYDkQnln83k
+        scope:
+          - openid
+          - view_catalogue
+          - edit_catalogue
+          - microprofile-jwt
+      provider:
+        keycloak:
+         issuer-uri: http://localhost:8083/realms/store
+         user-name-attribute: preferred_username
+  jpa:
+    hibernate:
+      ddl-auto: update
+  application:
+    name: manager-app
+server:
+  port: 8081
+services:
+ catalogue:
+  uri: http://localhost:8082
+  registration-id: keycloak
+logging:
+  level:
+    org.flywaydb.core.internal: DEBUG

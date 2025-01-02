@@ -1,0 +1,30 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/feedback
+  application:
+   name: customer-app
+  security:
+    oauth2:
+      client:
+       provider:
+        keycloak:
+          issuer-uri: http://localhost:8083/realms/store
+          user-name-attribute: preferred_username
+       registration:
+          keycloak:
+            client-id: customer-app
+            client-secret: YIqo5bNwIHtZuE4rTKMKhvLW4Iq6tHVm
+            scope:
+              - openid
+              - view_catalogue
+            client-authentication-method: post
+            authorization-grant-type: authorization_code
+
+server:
+  port: 8084
+services:
+  catalogue:
+    uri: http://localhost:8082
+  feedback:
+    uri: http://localhost:8085

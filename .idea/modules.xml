@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/catalogue-service/catalogue-service.iml" filepath="$PROJECT_DIR$/catalogue-service/catalogue-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/manager-app/manager-app.iml" filepath="$PROJECT_DIR$/manager-app/manager-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/project.iml" filepath="$PROJECT_DIR$/.idea/project.iml" />
+    </modules>
+  </component>
+</project>
